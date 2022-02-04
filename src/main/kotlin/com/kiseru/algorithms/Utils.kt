@@ -7,7 +7,7 @@ object Utils {
         var high = array.size - 1
 
         while (low <= high) {
-            val mid = (low + high) / 2
+            val mid = (low + high) shr 2
             val guess = array[mid]
             if (guess == item) {
                 return mid
